@@ -1,7 +1,7 @@
-FROM ruby:2.4.2-stretch
+FROM hellobaby/ruby-app:2.4.2
 
 RUN apt-get update -qq && \
-    apt-get install -y locales build-essential libpq-dev sudo vim iputils-ping && \
+    apt-get install -y locales build-essential libpq-dev sudo vim iputils-ping tzdata && \
     rm -rf /var/lib/apt/lists/*
 
 # Set LOCALE to UTF8
