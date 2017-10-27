@@ -1,4 +1,4 @@
-FROM hellobaby/ruby-app:2.4.2
+FROM eu.gcr.io/baby-snap-173700/ruby-app:2.4.2
 
 RUN apt-get update -qq && \
     apt-get install -y locales build-essential libpq-dev sudo vim iputils-ping tzdata && \
