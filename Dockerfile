@@ -11,7 +11,7 @@ RUN echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && \
     /usr/sbin/update-locale LANG=en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
 
-RUN gem update --system $RUBYGEMS_VERSION && gem install bundler
+RUN gem update --system $RUBYGEMS_VERSION && gem install --force bundler
 
 ENV USER apps
 ENV APP app
