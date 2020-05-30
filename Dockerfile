@@ -1,4 +1,4 @@
-FROM eu.gcr.io/baby-snap-173700/ruby:2.5.3
+FROM eu.gcr.io/baby-snap-173700/ruby:2.5.3-focal
 
 RUN apt-get update -qq && \
     apt-get install -y locales build-essential libpq-dev sudo vim iputils-ping tzdata && \
